@@ -1,0 +1,323 @@
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 100%;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  display: block;
+}
+i {
+  display: inline-block;
+}
+/* 头部 */
+header {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+header .h-logo {
+  font-size: 0;
+  padding: 15px 0;
+}
+header .h-logo .icon {
+  display: inline-block;
+  width: 75px;
+  height: 35px;
+  background: url(https://m.xunlei.com/v2018/dist/wap/xl-logo.png?h=799f9e)
+    no-repeat;
+  background-size: 100% 100%;
+}
+header .h-logo .icon1 {
+  display: inline;
+  float: right;
+}
+header .h-logo .icon1 .icon-more {
+  width: 20px;
+  height: 25px;
+  background: url(./img/more.png);
+  transition: border-color 0.25s;
+}
+.mask {
+  width: 100%;
+  height: 600px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: none;
+  box-sizing: border-box;
+}
+.mask h1 {
+  text-align: right;
+}
+.mask h1 a {
+  display: inline;
+  font-size: 40px;
+}
+.mask ul li {
+  padding-left: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.mask a {
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  line-height: 47.5px;
+  text-align: left;
+}
+/* center */
+.center {
+  background-color: #0e0e2f;
+  padding-top: 65px;
+}
+.home-box {
+  text-align: center;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 0.28rem;
+}
+.c-banner {
+  margin-bottom: 20px;
+}
+.c-banner .main {
+  padding-top: 80px;
+  height: 390px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #0f97ff
+    url(https://m.xunlei.com/v2018/dist/wap/head-bg.jpg?h=38b7f0) no-repeat;
+  background-size: 100% 100%;
+}
+.img {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+}
+.c-banner-info {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+}
+.c-banner-info h2 {
+  font-size: 27px;
+  margin: 30px 0 12px;
+}
+.c-banner-info h2 a {
+  font-weight: bold;
+}
+.c-banner-info span {
+  font-size: 10px;
+}
+.c-banner-down {
+  margin-top: 65px;
+}
+.btn {
+  width: 200px;
+  line-height: 50px;
+  text-align: center;
+  transition: 0.25s;
+  color: #1f7cf4;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.c-banner-down .btn span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.c-product {
+  margin-bottom: 45px;
+}
+.c-product .main {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #222543;
+}
+.c-product .main ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 16px;
+}
+.c-product-img {
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  margin-right: 12px;
+  border-radius: 10px;
+}
+.c-product-info {
+  width: 1%;
+  flex: 1;
+  margin-right: 0.36rem;
+  overflow: hidden;
+  text-align: left;
+}
+.c-product-info .tit {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.95);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.c-product-info .txt {
+  font-size: 10px;
+  width: 150px;
+  color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.c-product-btn {
+  width: 72px;
+  line-height: 26px;
+  font-size: 12px;
+}
+.c-product-more {
+  font-size: 14px;
+  line-height: 49px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* onething */
+.home-tit {
+  font-size: 32px;
+  font-weight: bold;
+}
+.home-txt {
+  font-size: 10px;
+  padding: 0 15px;
+  margin-top: 15px;
+  line-height: 22px;
+}
+.c-onething {
+  padding: 0;
+}
+.c-onething .main {
+  position: relative;
+  margin-top: 21.5px;
+  padding: 17.5px 15px;
+  background: url(https://m.xunlei.com/v2018/dist/wap/onething-bg.jpg?h=e2155f)
+    no-repeat;
+  background-size: 100% 100%;
+}
+.c-onething .main ul {
+  height: 623px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-onething .main ul li {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(49, 59, 232, 0.7),
+    rgba(58, 14, 201, 0.7)
+  );
+}
+.c-onething .main ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  line-height: 1;
+}
+.c-onething .main ul li .tit {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+}
+.c-onething .main ul li .txt {
+  font-size: 14px;
+  margin: 14px 0 18px;
+  letter-spacing: 4px;
+}
+.c-onething .main ul li a .icon {
+  background: url(https://m.xunlei.com/v2018/dist/wap/spr_home.png?h=0531b8)
+    no-repeat;
+  background-size: 164px;
+}
+.c-onething .main ul li a .icon-01 {
+  width: 60px;
+  height: 55px;
+  background-position: 100% 0%;
+}
+.c-onething .main ul li a .icon-02 {
+  width: 100px;
+  height: 45px;
+  background-position: 0% 0%;
+}
+.c-onething .main ul li a .icon-03 {
+  width: 75px;
+  height: 50px;
+  background-position: 0% 100%;
+}
+
+/* footer */
+footer {
+  background-color: #f3f9ff;
+}
+footer ul {
+  padding: 0 15px;
+}
+footer ul li {
+  font-size: 15px;
+  line-height: 47.5px;
+  text-align: left;
+}
+footer ul li a {
+  color: rgba(1, 1, 1, 0.8);
+}
+footer .media {
+  text-align: center;
+  padding: 29px 0 12px;
+  font-size: 0;
+}
+footer .media a {
+  display: inline-block;
+}
+footer .media .icon1 {
+  width: 30px;
+  height: 25px;
+  background: url(https://m.xunlei.com/v2018/dist/wap/spr_common.png?h=038c05)
+    no-repeat;
+  background-size: 88px;
+}
+footer .media .icon-wx {
+  background-position: 0% 100%;
+}
+footer .media .icon-wb {
+  background-position: 0% 0%;
+}
+.copyright {
+  text-align: center;
+  font-size: 10px;
+  line-height: 17.5px;
+  color: #b2b2b2;
+}
+.copyright p a {
+  display: inline;
+}
