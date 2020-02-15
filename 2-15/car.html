@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>car</title>
+    <style>
+        .box {
+            border: 3px solid lightblue;
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body></body>
+<script>
+    class Foo {
+        static classMethod() {
+            return `
+            <div class="box">
+        <p>当前人数: <span class="num">2</span>请等待...</p>
+
+<!-- <button disabled class="button">打车</button> -->
+
+<div style="display: none;" class="div">
+  <label><input name="car" type="radio" value="1号车" />1号车</label>
+  <label><input name="car" type="radio" value="2号车" />2号车</label>
+  <button class="qd" disabled>确定</button>
+  <button class="qx">取消</button>
+</div>
+<div class="time" style="display: none;"></div>
+</div>
+`;
+        }
+    }
+
+    var item = Foo.classMethod();
+    document.body.innerHTML = item;
+    var number = document.getElementsByClassName("number")[0];
+
+    var tim = setInterval(function () {
+        if (num.innerHTML == 1) {
+            clearInterval(tim);
+        }
+        num.innerHTML--;
+
+    }, 1000);
+    document.querySelector(".div").style.display = "block";
+    // };
+    // 全部车 当选中一辆车的时候
+    var index = "";
+    var ipts = document.querySelectorAll("input");
+    for (var i = 0; i < ipts.length; i++) {
+        ipts[i].onclick = function () {
+            if (this.checked == true) {
+                index = this.value;
+                document.querySelector(".qd").disabled = false;
+            }
+        };
+    }
+    var t = 10;
+    document.querySelector(".qd").onclick = function () {
+        alert("正在为您呼叫" + index);
+        document.querySelector(".time").style.display = "block";
+        document.querySelector(".time").innerHTML =
+            "还有" + t + "分钟后到达";
+        setInterval(function () {
+            t--;
+        }, 60000);
+    };
+    document.querySelector(".qx").onclick = function () {
+        alert("确定取消订单吗？");
+        for (var i = 0; i < ipts.length; i++) {
+            ipts[i].checked = false;
+        }
+        document.querySelector(".time").style.display = "none";
+    };
+</script>
+
+</html>
