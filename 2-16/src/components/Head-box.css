@@ -1,0 +1,20 @@
+.header-box {
+    border: solid 2px red;
+    background: lightblue;
+    width: 100%;
+    height: 200px;
+
+}
+
+.header-box ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-box ul li {
+    margin: 0 15px;
+}
+
+/* react 中使用scss预处理器写样式，也能达到解决样式作用域的问题
+    js in css    /   module.css
+*/
